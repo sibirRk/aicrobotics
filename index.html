@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap&subset=cyrillic"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/css/select2.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./css/s.css">
+</head>
+<body>
+	<main>
+		<div class="container">
+			<div class="row">
+				<div class="mission block block_is-rounded block_is-with-padding col-8">
+					<h2 class="block__title">Наша миссия</h2>
+					<p>
+						ВЛБАНК (ОАО) перешёл на промышленную эксплуатацию автоматизированной банковской системы ЦФТ-Банк, современного
+						масштабируемого решения, позволившего банку перестроить свой технологический
+						цикл и расширить потенциальные возможности для развития.
+					</p>
+				</div>
+				<div class="col-2 offset-2">
+					<div class="form-group">
+						<div class="year-selector">
+							<select class="year-selector__select" name="year" id="year">
+								<option value="2008" data-year="2008">2008</option>
+								<option value="2007" data-year="2007">2007</option>
+								<option value="2006" data-year="2006">2006</option>
+								<option value="2005" data-year="2005">2005</option>
+								<option value="2004" data-year="2004">2004</option>
+								<option value="2003" data-year="2003">2003</option>
+								<option value="2002" data-year="2002">2002</option>
+								<option value="2001" data-year="2001">2001</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<svg preserveAspectRatio="none" id='svg' width="100%" height="400" viewBox="0 0 1305 372" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<defs>
+				<filter x="-0.25" y="0" width="1.5" height="1" id="active" radius="2">
+					<feFlood flood-color="#eb4f47"/>
+					<feComposite in="SourceGraphic" operator="xor"/>
+				</filter>
+				<path id="shipPath" fill="none" stroke="transparent" d="M 175, 275" viewBox="0 0 1305 372"/>
+			</defs>
+
+			<use visibility="hidden" xlink:href="shipPath" />
+
+			
+			<image id="bgImage" xlink:href="./assets/path.svg" x="0" y="0" height="372" width="100%" viewBox="0 0 1305 372"/>
+			
+			<circle r="10" cx="175" cy="275" data-year="2001" />
+			<text filter="url(#active)" x="160" y="310">2001</text>
+			<circle r="10" cx="300" cy="264" data-year="2002" />
+			<text x="285" y="299">2002</text>
+			<circle r="10" cx="425" cy="280" data-year="2003" />
+			<text x="410" y="315">2003</text>
+			<circle r="10" cx="550" cy="220" data-year="2004" />
+			<text x="535" y="255">2004</text>
+			<circle r="10" cx="675" cy="150" data-year="2005" />
+			<text x="660" y="185">2005</text>
+			<circle r="10" cx="822" cy="164" data-year="2006" />
+			<text x="807" y="197">2006</text>
+			<circle r="10" cx="945" cy="165" data-year="2007" />
+			<text x="930" y="200">2007</text>
+			<circle r="10" cx="1050" cy="70" data-year="2008" />
+			<text x="1035" y="105">2008</text>
+
+			<image id="ship" x='0' y="0" width="60" height="40" viewBox="0 0 75 40" xlink:href='./assets/ship.png' 
+			transform="translate(-30,-45)" />
+			<animateMotion id="animate" xlink:href="#ship" begin="0s" dur="1.5s" repeatCount="1" fill="freeze">
+				<mpath xlink:href="#shipPath" />
+			</animateMotion>
+		</svg>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="information block block_is-with-padding block_is-with-border col-12" data-year="2001">
+						<div class="block__title">Наша миссия</div>
+						<span class="block__date">24 августа 2001 г.</span>
+						<p>
+							ВЛБАНК (ОАО) перешёл на промышленную эксплуатацию автоматизированной банковской системы ЦФТ-Банк, современного
+							масштабируемого решения, позволившего банку перестроить свой технологический
+							цикл и расширить потенциальные возможности для развития.
+						</p>
+					</div>
+					<div class="information block block_is-with-padding block_is-with-border col-12" data-year="2002">
+						<div class="block__title">Новый КЦ</div>
+						<span class="block__date">1 января 2002 г.</span>
+						<p>
+							На территории Европейского союза введена в наличных расчётах единая валюта — евро. Теперь не только условные единицы, но и другие тоже
+						</p>
+					</div>
+					<div class="information block block_is-with-padding block_is-with-border col-12" data-year="2003">
+						<div class="block__title">Живут же вроде как-то</div>
+						<span class="block__date">31 января 2003 г.</span>
+						<p>
+							Легализация однополых браков в Бельгии. Духовные скрепы не так сильны
+						</p>
+					</div>
+					<div class="information block block_is-with-padding block_is-with-border col-12" data-year="2004">
+						<div class="block__title">Рис и прочая гречка</div>
+						<span class="block__date">1 января 2004 г.</span>
+						<p>
+							 <a href="http://www.un.org/russian/question/decades.htm">Международный год риса</a>, а вы что думали?
+						</p>
+					</div>
+					<div class="information block block_is-with-padding block_is-with-border col-12" data-year="2005">
+						<div class="block__title">Вертолеты и огненные лисы</div>
+						<span class="block__date">26 августа 2005 г.</span>
+						<p>
+							Впервые в истории вертолёт достиг самой высокой точки планеты — вершины горы Эверест и совершил посадку на этом «пике
+							мира». За штурвалом вертолёта компании «Еврокоптер» находился французский пилот Дидье Дельсаль.
+						</p>
+						<p>
+							А вот браузер Firefox скачан более 50 млн раз. Было же время...
+						</p>
+					</div>
+					<div class="information block block_is-with-padding block_is-with-border col-12" data-year="2006">
+						<div class="block__title">Огого же</div>
+						<span class="block__date">2 июля 2006 г.</span>
+						<p>
+							На президентских выборах в Мексике победил Фелипе Кальдерон. Мы тоже не знаем кто это, но зато умеем пользоваться Википедией
+						</p>
+					</div>
+					<div class="information block block_is-with-padding block_is-with-border col-12" data-year="2007">
+						<div class="block__title">Скука смертная</div>
+						<span class="block__date">24 августа 2007 г.</span>
+						<p>
+							Год как год. Кораблики плавают, точки светятся
+						</p>
+					</div>
+					<div class="information block block_is-with-padding block_is-with-border col-12" data-year="2008">
+						<div class="block__title">Обвал всего и вся</div>
+						<span class="block__date">31 декабря 2008 г.</span>
+						<p>
+							В 2008 году было очень интересно: обвал рубля, фондовых бирж, урожая на даче директора банка
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.8/js/select2.full.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="./js/s.js"></script>
+</body>
+</html>
